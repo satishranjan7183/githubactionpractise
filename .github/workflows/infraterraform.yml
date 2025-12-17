@@ -34,5 +34,13 @@ jobs:
        run: terraform init -input=false
        working-directory: ${{ env.TF_WORKING_DIR }}
 
+     - name: Terraform plan
+       id: plan
+       run: terraform plan -input=false
+       working-directory: ${{ env.TF_WORKING_DIR }}
+
+          
+       
+
 
  
